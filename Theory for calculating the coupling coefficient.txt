@@ -1,0 +1,12 @@
+I've created a comprehensive Python script to calculate the mutual coupling coefficient between conductors using the TEM (Transverse Electromagnetic) approximation. The code includes detailed explanations and performs the following steps:
+
+1. Converts the capacitance values into a matrix format
+2. Calculates the inverse of the capacitance matrix
+3. Derives the inductance matrix using the TEM relationship: [L] = μ₀ε₀[C]⁻¹
+4. Extracts the self-inductances (L11, L22) and mutual inductance (M)
+5. Computes the coupling coefficient k using the formula: k = M/√(L11×L22)
+6. Provides an interpretation of the k value
+
+You can run this script with your capacitance values, and it will give you the complete analysis with proper explanations. The code also includes validation checks to ensure the calculations are physically meaningful.
+
+For your specific values (C11=1.25e-10, C12=-4.90e-16, C22=1.23e-10), the coupling coefficient is approximately 3.95×10⁻⁶, indicating very weak coupling between the conductors.
